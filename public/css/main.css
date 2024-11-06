@@ -1,0 +1,219 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+}
+
+
+.backblack{
+    background-color: #000000;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.interactive-image {
+    transition: transform 0.3s;
+}
+
+.interactive-image:hover {
+    transform: scale(1.05);
+}
+
+.bg-gradient {
+    background: linear-gradient(to right, #C7997B, #C7997B);
+}
+
+.border-bottom {
+    border-bottom: 5px solid #C7997B;
+}
+
+.custom-shape-divider-bottom-1648424872 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1648424872 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 30px);
+    height: 100px;
+    margin-left: -30px;
+}
+
+.custom-shape-divider-bottom-1648424872-3{
+    margin-top: -50px;
+}
+.custom-shape-divider-bottom-1648424872-4{
+    margin-bottom: 10px;
+}
+.shape-fill {
+    fill: #C7997B;
+}
+
+
+
+.shape-fill-2 {
+    fill: #000000;
+}
+
+
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.bg-light-2 {
+background-color: #C7997B;
+}
+
+/* Ajustar el color del texto de los encabezados */
+h2, h3 {
+    color: #ffffff; /* Color blanco más fuerte */
+}
+
+/* Si deseas ajustar los textos en el contenido de la sección de gameplay */
+.text-white {
+    color: #ffffff; /* Asegúrate de que los textos en la sección de gameplay sean blancos */
+}
+
+.text-primary-white{
+    color: #fff;
+}
+
+.text-green{
+    color: #C7997B;
+}
+
+.text-black{
+    color: #000000;
+}
+
+.navbar-nav .nav-link {
+    color: #000000; /* Cambia el color del texto a negro */
+    transition: transform 0.3s; /* Transición suave para el efecto */
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el cursor */
+}
+
+.btn-custom {
+    background-color: #C7997B; /* Color de fondo verde */
+    color: #ffffff; /* Color del texto blanco */
+    border: none; /* Eliminar el borde por defecto */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.btn-custom:hover {
+    background-color: #000000; /* Cambiar a negro al pasar el cursor */
+    color: #ffffff; /* Asegurarse de que el texto se mantenga blanco */
+}
+
+.card {
+    background-color: #000000; /* Fondo negro para las tarjetas */
+    color: #C7997B; /* Color verde para el texto del cuerpo */
+}
+
+.card-title {
+    color: #ffffff; /* Títulos en blanco */
+}
+
+.card-text {
+    color: #C7997B; /* Texto en verde */
+}
+
+.card.border-light {
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borde ligero opcional (puedes eliminarlo si no lo quieres) */
+}
+
+.testimonial-card {
+    background-color: #C7997B; /* Fondo verde para las tarjetas de testimonios */
+}
+
+.testimonial-card .card-title {
+    color: #000000; /* Títulos en negro */
+}
+
+.testimonial-card .card-text {
+    color: #ffffff; /* Texto en blanco */
+}
+
+.btn-nav {
+    color: #EFD6AE;
+    background-color: #5D594E;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.btn-nav:hover {
+    background-color: #C7997B;
+}
+
+    /* Efecto de resplandor en el título */
+    .title-effect {
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(212, 175, 55, 0.6), 0 0 30px rgba(212, 175, 55, 0.4);
+        animation: glow 1.5s infinite alternate;
+    }
+
+    /* Animación de parpadeo de resplandor */
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.8), 0 0 20px rgba(212, 175, 55, 0.6), 0 0 30px rgba(212, 175, 55, 0.4);
+        }
+        to {
+            text-shadow: 0 0 20px rgba(212, 175, 55, 1), 0 0 30px rgba(212, 175, 55, 0.8), 0 0 40px rgba(212, 175, 55, 0.6);
+        }
+    }
+
+/* Asegura que el slider y el video tengan la misma altura */
+.gameplay-slider, .video-container {
+    height: auto;
+    max-height: 350px; /* Ajusta según el tamaño de tus imágenes */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.gameplay-slider{
+    margin-right: 3rem;
+}
+/* Estilo para las imágenes dentro del slider */
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilo para el video de YouTube */
+.youtube-video {
+    width: 100%;
+    height: 100%;
+    max-height: 350px; /* Igual al alto máximo del slider */
+    border-radius: 10px;
+}
+
+/* Estilo para la leyenda del slider */
+.carousel-caption p {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Aplicar la fuente elegante a todo el documento */
+body, h1, h2, h3, h4, h5, h6, p, a, button {
+    font-family: 'Playfair Display', serif;
+}
