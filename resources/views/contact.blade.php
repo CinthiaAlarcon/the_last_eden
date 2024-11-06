@@ -24,9 +24,9 @@
                         <h2>Contáctanos</h2>
 
                         <!-- Formulario modificado para enviar con FormSubmit -->
-                        <form action="https://formsubmit.co/091ecb6607809986880bf9caab18d385" method="POST">
+                        <form action="https://formsubmit.co/091ecb6607809986880bf9caab18d385" method="POST" onsubmit="showSuccessMessage()">
                             <!-- Agrega el campo hidden _next para redirigir -->
-                            <input type="hidden" name="_next" value="http://localhost:8000/?status=success"> <!-- Cambia esta URL -->
+                            <input type="hidden" name="_next" value="https://web-production-c374b.up.railway.app/"> <!-- Cambia esta URL -->
                             <input type="hidden" name="_captcha" value="false">
 
                             <div class="mb-3">
@@ -43,6 +43,11 @@
                             </div>
                         </form>
 
+                        <!-- Contenedor para el mensaje de éxito -->
+                        <div id="success-message" style="display: none; color: white; margin-top: 15px; text-align: center; ">
+                            ¡Tu mensaje ha sido enviado con éxito!
+                        </div>
+
                         <div class="text-center mt-4">
                             <a href="/" class="btn btn-dark mt-4" style="color: #white; background-color: black; border: none;" onmouseover="this.style.backgroundColor='#C7997B'" onmouseout="this.style.backgroundColor='black'">Volver al Inicio</a>
                         </div>
@@ -54,5 +59,18 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function showSuccessMessage() {
+            // Muestra el mensaje de éxito
+            document.getElementById('success-message').style.display = 'block';
+
+            // Redirige al inicio después de 3 segundos
+            setTimeout(function() {
+                window.location.href = '/';
+            }, 3000); // 3 segundos de retraso
+        }
+    </script>
+
 </body>
 </html>

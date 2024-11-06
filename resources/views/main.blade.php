@@ -22,42 +22,47 @@
 
 
 
-<!-- Hero Section -->
-<section id="hero" class="d-flex position-relative" style="height: 100vh; background-color: ;">
-    <div class="col-md-12" style="background: url('imagenes/Back-hero.png') center/cover no-repeat;">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="btn btn-dark mt-4 btn-nav" href="#historia">Historia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-dark mt-4 btn-nav" href="#Gameplay">Gameplay</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-dark mt-4 btn-nav" href="#sobre-nosotros">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-dark mt-4 btn-nav" href="#propuesta-valor">Propuesta de Valor</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-dark mt-4 btn-nav" href="#contacto">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+<section id="hero" class="position-relative" style="min-height: 100vh; background: url('imagenes/Back-hero.png') center/cover no-repeat;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100" style="top: 0;">
+        <div class="container-fluid">
+            <!-- Logo -->
+          <!--  <a class="navbar-brand ms-3" href="#">
+                <img src="imagenes/logo.png" alt="Logo The Last Eden" style="height: 50px;">
+            </a>  -->
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="btn btn-dark mx-2 btn-nav" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark mx-2 btn-nav" href="#Gameplay">Gameplay</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark mx-2 btn-nav" href="#sobre-nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark mx-2 btn-nav" href="#propuesta-valor">Propuesta de Valor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark mx-2 btn-nav" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
             </div>
-        </nav>        
-    </div>
+        </div>
+    </nav> 
+
+    <!-- Shape divider -->
     <div class="custom-shape-divider-bottom-1648424872 color2">
         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M321.39,56.29C205.75,85.33,82.07,86.43,0,79.58V0H1200V86.36c-71.88-6.56-136.13-20.22-197.15-26.19C859.12,45.29,696.2,79.33,516.33,84.35,453.67,86.42,385.37,68.28,321.39,56.29Z" class="shape-fill-2"></path>
         </svg>
-    
+    </div>
 </section>
+
 
     <!-- Sección Historia -->
     <section id="historia" class="py-5 position-relative backblack">
@@ -134,33 +139,33 @@
 </section>
 
 
-    <!-- Nueva Sección: Sobre Nosotros -->
-    <section id="sobre-nosotros" class="py-5 position-relative backblack">
+<!-- Nueva Sección: Sobre Nosotros -->
+<section id="sobre-nosotros" class="py-5 position-relative backblack">
     <div class="custom-shape-divider-bottom-1648424872-3">
         <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V60.75c34.78,6.52,70.08,10.73,104.62,12.24,32.89,1.45,64.35-0.67,95.37-6.11,36.66-6.04,73.57-16.47,110.01-22.83,55.29-10.06,108.93-4.38,163.22,6.88,58.25,13.35,116.51,27.29,174.78,29.18C1105.89,38.15,1200,36.57,1200,36.57V0H0Z" class="shape-fill"></path>
         </svg>
     </div>
-        <div class="container">
-            <h1 class="text-primary-white text-center">Sobre Nosotros</h1>
-            <div class="row mt-4">
-                <!-- Columna de Texto -->
-                <div class="col-md-6 text-center">
-                    <p class="text-green">
-                        Somos un equipo apasionado de desarrolladores y diseñadores, dedicados a crear experiencias de juego que desafían y cautivan. Nos inspira la idea de contar historias profundas en mundos cautivadores.
-                    </p>
-                    <img src="imagenes/ubication.png" alt="Gameplay" class="img-fluid interactive-image">
-                </div>
-                <!-- Columna de Mapa -->
-                <div class="col-md-6">
-                    <div id="map" style="height: 300px; width: 100%;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97528.4898694143!2d-104.89843486283144!3d21.451696189702766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84273123eaaaf2b9%3A0x16adf6ada41de099!2sUniversidad%20Tecnol%C3%B3gica%20de%20Nayarit!5e0!3m2!1ses!2smx!4v1730240308746!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> <!-- Mapa aquí -->
+    <div class="container">
+        <h1 class="text-primary-white text-center">Sobre Nosotros</h1>
+        <div class="row mt-4">
+            <!-- Columna de Texto -->
+            <div class="col-md-6 text-center">
+                <p class="text-green">
+                    Somos un equipo apasionado de desarrolladores y diseñadores, dedicados a crear experiencias de juego que desafían y cautivan. Nos inspira la idea de contar historias profundas en mundos cautivadores.
+                </p>
+                <img src="imagenes/ubication.png" alt="Gameplay" class="img-fluid interactive-image">
+            </div>
+            <!-- Columna de Mapa -->
+            <div class="col-md-6">
+                <div id="map" class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97528.4898694143!2d-104.89843486283144!3d21.451696189702766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84273123eaaaf2b9%3A0x16adf6ada41de099!2sUniversidad%20Tecnol%C3%B3gica%20de%20Nayarit!5e0!3m2!1ses!2smx!4v1730240308746!5m2!1ses!2smx" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
-    </section>
-
-
-
+    </div>
+</section>
 
 
 <!-- Nueva Sección: Propuesta de Valor -->

@@ -138,6 +138,7 @@ h2, h3 {
 
 .testimonial-card {
     background-color: #C7997B; /* Fondo verde para las tarjetas de testimonios */
+    margin-top: 1rem;
 }
 
 .testimonial-card .card-title {
@@ -183,6 +184,7 @@ h2, h3 {
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
 }
 .gameplay-slider{
     margin-right: 3rem;
@@ -216,4 +218,20 @@ h2, h3 {
 /* Aplicar la fuente elegante a todo el documento */
 body, h1, h2, h3, h4, h5, h6, p, a, button {
     font-family: 'Playfair Display', serif;
+}
+.map-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000; /* Fondo de relleno */
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
