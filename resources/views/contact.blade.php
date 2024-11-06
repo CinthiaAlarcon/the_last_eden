@@ -26,7 +26,7 @@
                         <!-- Formulario modificado para enviar con FormSubmit -->
                         <form action="https://formsubmit.co/091ecb6607809986880bf9caab18d385" method="POST" onsubmit="showSuccessMessage()">
                             <!-- Agrega el campo hidden _next para redirigir -->
-                            <input type="hidden" name="_next" value="https://web-production-c374b.up.railway.app/"> <!-- Cambia esta URL -->
+                            <input type="hidden" name="_next" value="https://web-production-c374b.up.railway.app/?status=success"> <!-- Cambia esta URL -->
                             <input type="hidden" name="_captcha" value="false">
 
                             <div class="mb-3">
