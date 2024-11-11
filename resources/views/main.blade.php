@@ -53,7 +53,7 @@
                         <a class="btn btn-dark mx-2 btn-nav" href="#historia">Historia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-dark mx-2 btn-nav" href="#Gameplay">Gameplay</a>
+                        <a class="btn btn-dark mx-2 btn-nav" href="#gameplay">Gameplay</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-dark mx-2 btn-nav" href="#sobre-nosotros">Sobre Nosotros</a>
