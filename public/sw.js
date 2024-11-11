@@ -87,8 +87,8 @@ self.addEventListener('push', (event) => {
   const title = event.data ? event.data.text() : 'Notificación';
   const options = {
     body: 'Aquí va el contenido de la notificación',
-    icon: '/images/icon-192x192.png',
-    badge: '/images/icon-192x192.png'
+    icon: '/images/icons/icon-192x192.png',
+    badge: '/images/icons/icon-192x192.png'
   };
 
   event.waitUntil(
