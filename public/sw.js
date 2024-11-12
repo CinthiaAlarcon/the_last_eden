@@ -13,6 +13,7 @@ const CACHE_URLS = [
   '/images/gameplay2.png',
   '/images/gameplay3.png',
   '/images/history.jpeg',
+  '/images/icon-16x16.png',
   '/images/ubication.png',
   '/images/icons/icon-192x192.png',   // Iconos de la app (cambia con tus imágenes)
   '/images/icons/icon-512x512.png',   // Iconos de la app (cambia con tus imágenes)
