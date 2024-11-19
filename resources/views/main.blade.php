@@ -10,7 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Trouble&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sans-serif&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
@@ -37,14 +38,10 @@
 
 
 
-<section id="hero" class="position-relative" style="min-height: 100vh; background: url('imagenes/Back-hero.png') center/cover no-repeat;">
+<section id="hero" class="position-relative text-white d-flex align-items-center" style="min-height: 100vh; background: url('imagenes/Back-hero.png') center/cover no-repeat; font-family: 'Playfair Display', serif;">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100" style="top: 0;">
         <div class="container-fluid">
-            <!-- Logo -->
-          <!--  <a class="navbar-brand ms-3" href="#">
-                <img src="imagenes/logo.png" alt="Logo The Last Eden" style="height: 50px;">
-            </a>  -->
             <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,7 +65,12 @@
                 </ul>
             </div>
         </div>
-    </nav> 
+    </nav>
+
+    <!-- Título en el Hero -->
+    <div class="container position-absolute" style="top: 50%; right: 10%; transform: translateY(-50%);">
+        <h1 class="display-1 fw-bold text-end">The Last Eden</h1>
+    </div>
 
     <!-- Shape divider -->
     <div class="custom-shape-divider-bottom-1648424872 color2">
@@ -77,6 +79,7 @@
         </svg>
     </div>
 </section>
+
 
 
     <!-- Sección Historia -->

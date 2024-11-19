@@ -3,6 +3,20 @@ body {
     background-color: #000000;
 }
 
+/* Para los títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Trouble', sans-serif;
+}
+
+/* Para el texto normal y subtítulos */
+body, p, a, li, span, div {
+    font-family: 'Sans-serif', sans-serif;
+}
+
+/* Opcional: estilos específicos */
+.navbar .btn-nav {
+    font-family: 'Sans-serif', sans-serif;
+}
 
 .backblack{
     background-color: #000000;
