@@ -68,7 +68,7 @@
     </nav>
 
     <!-- Título en el Hero -->
-    <div class="container position-absolute" style="top: 50%; right: 10%; transform: translateY(-50%);">
+    <div class="container position-absolute" style="top: 50%; right: 15%; transform: translateY(-50%);">
         <h1 class="display-1 fw-bold text-end">The Last Eden</h1>
     </div>
 
