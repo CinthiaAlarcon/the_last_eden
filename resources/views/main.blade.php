@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="icon" href="imagenes/icon-16x16.png" type="image/png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="manifest" href="/manifest.json">
    
@@ -63,7 +65,7 @@
                     <a class="btn btn-dark mx-2 btn-nav" href="#historia">Historia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="btn btn-dark mx-2 btn-nav" href="#gameplay">Gameplay</a>
+                    <a class="btn btn-dark mx-2 btn-nav" href="#gameplay">Jugabilidad</a>
                 </li>
                 <li class="nav-item">
                     <a class="btn btn-dark mx-2 btn-nav" href="#sobre-nosotros">Sobre Nosotros</a>
@@ -153,7 +155,7 @@
     </div>
     
     <div class="container">
-        <h1 class="text-primary text-black text-center">Gameplay</h1>
+        <h1 class="text-primary text-black text-center">Jugabilidad</h1>
         
         <div class="row mt-4">
             <!-- Columna del Slider de Imágenes -->
