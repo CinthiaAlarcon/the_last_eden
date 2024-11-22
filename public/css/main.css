@@ -250,12 +250,30 @@ body, h1, h2, h3, h4, h5, h6, p, a, button {
     height: 100%;
 }
 
+/* Ocultar el desplegable original */
 #google_translate_element select {
+    display: none;
+}
+
+/* Estilizar el contenedor del botón */
+#google_translate_element {
+    position: relative;
+}
+
+#google_translate_element:after {
+    content: "🌐"; /* Icono del globo */
+    font-size: 20px;
+    color: white;
     background-color: #343a40; /* Fondo oscuro */
-    color: white; /* Texto blanco */
-    border: none;
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 14px;
     cursor: pointer;
+    display: inline-block;
+    line-height: 1;
 }
+
+/* Cambiar color al pasar el cursor */
+#google_translate_element:hover:after {
+    background-color: #495057; /* Color más claro al hover */
+}
+
