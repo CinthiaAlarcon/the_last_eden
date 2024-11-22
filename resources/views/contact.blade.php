@@ -14,6 +14,23 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/forms.css"> <!-- Cambia el path según tu estructura -->
     <link rel="icon" href="imagenes/icon-16x16.png" type="image/png">
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'es',
+            includedLanguages: 'en,es',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            gaTrack: true,
+            gaId: 'UA-XXXXX-Y'
+        }, 'google_translate_element');
+        
+        // Ocultar el texto "Con la tecnología de Google"
+        var style = document.createElement('style');
+        style.innerHTML = '.goog-logo-link { display: none !important; } .goog-te-gadget { font-family: "Arial", sans-serif !important; }';
+        document.head.appendChild(style);
+    }
+</script>
 
 </head>
 <body class="bg-dark text-light">
@@ -49,6 +66,8 @@
                         <div id="success-message" style="display: none; color: white; margin-top: 15px; text-align: center; ">
                             ¡Tu mensaje ha sido enviado con éxito!
                         </div>
+                                            <!-- Google Translate -->
+        <div id="google_translate_element" class="ms-3"></div>
 
                         <div class="text-center mt-4">
                             <a href="/" class="btn btn-dark mt-4" style="color: #white; background-color: black; border: none;" onmouseover="this.style.backgroundColor='#C7997B'" onmouseout="this.style.backgroundColor='black'">Volver al Inicio</a>
