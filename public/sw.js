@@ -1,4 +1,4 @@
-const CACHE_NAME = 'the-last-eden-cache-v1'; // Version del cache
+const CACHE_NAME = 'the-last-eden-cache-v2'; // Incrementa la versión del cache
 const CACHE_URLS = [
   '/',
   '/index.php',
@@ -15,9 +15,8 @@ const CACHE_URLS = [
   '/images/history.jpeg',
   '/images/icon-16x16.png',
   '/images/ubication.png',
-  '/images/icons/icon-192x192.png',   // Iconos de la app (cambia con tus imágenes)
-  '/images/icons/icon-512x512.png',   // Iconos de la app (cambia con tus imágenes)
-
+  '/images/icons/icon-192x192.png',
+  '/images/icons/icon-512x512.png',
 ];
 
 // Instalación del Service Worker
@@ -50,6 +49,9 @@ self.addEventListener('activate', (event) => {
           }
         })
       );
+    }).then(() => {
+      // Force the waiting service worker to become the active service worker
+      self.clients.claim(); // Esto permite que el nuevo SW controle las pestañas abiertas
     })
   );
 });

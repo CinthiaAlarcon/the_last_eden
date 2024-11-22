@@ -21,13 +21,24 @@
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="manifest" href="/manifest.json">
-   
-   <script type="text/javascript">
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript">
     function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es,fr,de,it'}, 'google_translate_element');
+        new google.translate.TranslateElement({
+            pageLanguage: 'es',
+            includedLanguages: 'en,es',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+            gaTrack: true,
+            gaId: 'UA-XXXXX-Y'
+        }, 'google_translate_element');
+        
+        // Ocultar el texto "Con la tecnología de Google"
+        var style = document.createElement('style');
+        style.innerHTML = '.goog-logo-link { display: none !important; } .goog-te-gadget { font-family: "Arial", sans-serif !important; }';
+        document.head.appendChild(style);
     }
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
     <script>
   if ('serviceWorker' in navigator) {
@@ -54,7 +65,8 @@
     <div class="container-fluid">
         <!-- Logo -->
         <a class="navbar-brand ms-3" href="#">
-            <img src="imagenes/logo.png" alt="Logo The Last Eden" style="height: 50px;">
+                    <!-- Google Translate -->
+        <div id="google_translate_element" class="ms-3"></div>
         </a>
         <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -78,9 +90,6 @@
                 </li>
             </ul>
         </div>
-        <!-- Google Translate -->
-        <!-- Botón de cambio de idioma -->
-        <div id="google_translate_element" class="ms-3"></div>
         </div>
 </nav>
     <!-- Título en el Hero -->
@@ -135,7 +144,7 @@
                     <p class="text-green">En un futuro distópico cercano, el cambio climático ha devastado gran parte del planeta, provocando olas de calor extremas, colapsos ecológicos, y la destrucción de grandes ciudades. Los recursos naturales están al borde del agotamiento, y la humanidad ha sido obligada a refugiarse en pequeños enclaves que ofrecen protección limitada.</p>
                     <p class="text-green">El protagonista es Rafael Montiel, un ingeniero agrónomo que dedicó su vida a la investigación de técnicas de cultivo sostenible. Tras la aparición de una serie de olas de calor masivas y la falta de apoyo gubernamental a proyectos ecológicos, la sociedad se fragmentó, y Rafael se vio separado de su esposa e hija, quienes lograron refugiarse en un búnker llamado "Eden-12".</p>
                     <p class="text-green">Rafael ahora está en busca de su familia, recorriendo las ruinas de lo que alguna vez fue una próspera civilización. Sin embargo, las amenazas que enfrenta no solo son ambientales, sino también las consecuencias de antiguos proyectos científicos fallidos que han dejado huellas permanentes en la sociedad.</p>
-                    <a href="#gameplay" class="btn btn-custom mt-3">Ver Gameplay</a>
+                    <a href="#gameplay" class="btn btn-custom mt-3">Ver Jugabilidad</a>
                     </div>
                 <div class="col-md-6">
                     <div class="interactive-image">
