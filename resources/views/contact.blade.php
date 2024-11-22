@@ -66,9 +66,7 @@
                         <div id="success-message" style="display: none; color: white; margin-top: 15px; text-align: center; ">
                             ¡Tu mensaje ha sido enviado con éxito!
                         </div>
-                                            <!-- Google Translate -->
-        <div id="google_translate_element" class="ms-3"></div>
-
+                                            
                         <div class="text-center mt-4">
                             <a href="/" class="btn btn-dark mt-4" style="color: #white; background-color: black; border: none;" onmouseover="this.style.backgroundColor='#C7997B'" onmouseout="this.style.backgroundColor='black'">Volver al Inicio</a>
                         </div>
