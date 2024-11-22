@@ -19,6 +19,13 @@
     <link rel="icon" href="imagenes/icon-16x16.png" type="image/png">
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="manifest" href="/manifest.json">
+   
+   <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'en,es,fr,de,it'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script>
   if ('serviceWorker' in navigator) {
@@ -33,6 +40,7 @@
 </script>
 
 
+
 </head>
 <body class="bg-light text-dark">
 
@@ -41,35 +49,40 @@
 <section id="hero" class="position-relative text-white d-flex align-items-center" style="min-height: 100vh; background: url('imagenes/Back-hero.png') center/cover no-repeat; font-family: 'Playfair Display', serif;">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100" style="top: 0;">
-        <div class="container-fluid">
-            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="btn btn-dark mx-2 btn-nav" href="#historia">Historia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-dark mx-2 btn-nav" href="#gameplay">Gameplay</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-dark mx-2 btn-nav" href="#sobre-nosotros">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-dark mx-2 btn-nav" href="#propuesta-valor">Propuesta de Valor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn btn-dark mx-2 btn-nav" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand ms-3" href="#">
+            <img src="imagenes/logo.png" alt="Logo The Last Eden" style="height: 50px;">
+        </a>
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="btn btn-dark mx-2 btn-nav" href="#historia">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-dark mx-2 btn-nav" href="#gameplay">Gameplay</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-dark mx-2 btn-nav" href="#sobre-nosotros">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-dark mx-2 btn-nav" href="#propuesta-valor">Propuesta de Valor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-dark mx-2 btn-nav" href="#contacto">Contacto</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
+        <!-- Google Translate -->
+        <div id="google_translate_element" class="ms-3"></div>
+    </div>
+</nav>
     <!-- Título en el Hero -->
-    <div class="container position-absolute" style="top: 50%; right: 15%; transform: translateY(-50%);">
-        <h1 class="display-1 fw-bold text-end">The Last Eden</h1>
+    <div class="container position-absolute text-center text-lg-end" style="top: 50%; right: 10%; transform: translateY(-50%);">
+        <h1 class="fw-bold responsive-title">The Last Eden</h1>
     </div>
 
     <!-- Shape divider -->
@@ -79,6 +92,34 @@
         </svg>
     </div>
 </section>
+
+<style>
+/* Responsividad para el título */
+.responsive-title {
+    font-size: 4rem; /* Tamaño base */
+}
+
+/* Ajustes según los tamaños de pantalla */
+@media (max-width: 992px) {
+    .responsive-title {
+        font-size: 3rem; /* Tamaño para tablets y pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .responsive-title {
+        font-size: 2.5rem; /* Tamaño para móviles grandes */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .responsive-title {
+        font-size: 2rem; /* Tamaño para móviles pequeños */
+    }
+}
+</style>
+
 
 
 
