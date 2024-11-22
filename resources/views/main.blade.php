@@ -79,7 +79,7 @@
         <!-- Google Translate -->
         <!-- Botón de cambio de idioma -->
         <div id="google_translate_element" class="ms-3"></div>
-            </div>
+        </div>
 </nav>
     <!-- Título en el Hero -->
     <div class="container position-absolute text-center text-lg-end" style="top: 50%; right: 10%; transform: translateY(-50%);">
